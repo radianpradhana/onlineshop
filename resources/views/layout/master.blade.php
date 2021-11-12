@@ -26,6 +26,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <link href="{{ asset('template') }}/css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
     <!-- shop css -->
     <link href="{{ asset('template') }}/css/shop.css" type="text/css" rel="stylesheet" media="all">
+    <link href="{{ asset('template') }}/css/checkout.css" type="text/css" rel="stylesheet" media="all">
+    <!-- faq -->
+    <link href="{{ asset('template') }}/css/faq.css" rel="stylesheet" type="text/css" media="all" />
     <link href="{{ asset('template') }}/css/flexslider.css" type="text/css" rel="stylesheet" media="all">
     <!-- Owl-Carousel-CSS -->
     <link rel="stylesheet" href="{{ asset('template') }}/css/owl.carousel.min.css">
@@ -177,6 +180,74 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         });
     </script>
     <!-- //cart-js -->
+    <!--quantity-->
+    <script>
+        $('.value-plus').on('click', function () {
+            var divUpd = $(this).parent().find('.value'),
+                newVal = parseInt(divUpd.text(), 10) + 1;
+            divUpd.text(newVal);
+        });
+
+        $('.value-minus').on('click', function () {
+            var divUpd = $(this).parent().find('.value'),
+                newVal = parseInt(divUpd.text(), 10) - 1;
+            if (newVal >= 1) divUpd.text(newVal);
+        });
+    </script>
+    <!--quantity-->
+    <!-- FadeOut-Script -->
+    <script>
+        $(document).ready(function (c) {
+            $('.close1').on('click', function (c) {
+                $('.rem1').fadeOut('slow', function (c) {
+                    $('.rem1').remove();
+                });
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function (c) {
+            $('.close2').on('click', function (c) {
+                $('.rem2').fadeOut('slow', function (c) {
+                    $('.rem2').remove();
+                });
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function (c) {
+            $('.close3').on('click', function (c) {
+                $('.rem3').fadeOut('slow', function (c) {
+                    $('.rem3').remove();
+                });
+            });
+        });
+    </script>
+    <!--// FadeOut-Script -->
+    <!-- script for faq  tabs -->
+    <script>
+        $(function () {
+
+            var menu_ul = $('.faq > li > ul'),
+                menu_a = $('.faq > li > a');
+
+            menu_ul.hide();
+
+            menu_a.click(function (e) {
+                e.preventDefault();
+                if (!$(this).hasClass('active')) {
+                    menu_a.removeClass('active');
+                    menu_ul.filter(':visible').slideUp('normal');
+                    $(this).addClass('active').next().stop(true, true).slideDown('normal');
+                } else {
+                    $(this).removeClass('active');
+                    $(this).next().stop(true, true).slideUp('normal');
+                }
+            });
+
+        });
+    </script>
+    <!-- script for faq tabs -->    
     <!-- zoom -->
     <script src="{{ asset('template') }}/js/imagezoom.js"></script>
     <!-- zoom-->
@@ -198,6 +269,50 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
         }); //]]>
     </script>
+    <!-- easy-responsive-tabs -->
+    <script src="{{ asset('template') }}/js/easy-responsive-tabs.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#horizontalTab').easyResponsiveTabs({
+                type: 'default', //Types: default, vertical, accordion           
+                width: 'auto', //auto or any width like 600px
+                fit: true, // 100% fit in a container
+                closed: 'accordion', // Start closed if in accordion view
+                activate: function (event) { // Callback function if tab is switched
+                    var $tab = $(this);
+                    var $info = $('#tabInfo');
+                    var $name = $('span', $info);
+                    $name.text($tab.text());
+                    $info.show();
+                }
+            });
+        });
+    </script>
+    <!-- //easy-responsive-tabs -->
+
+    <!-- credit-card -->
+    <script src="{{ asset('template') }}/js/creditly.js"></script>
+    <link rel="stylesheet" href="{{ asset('template') }}/css/creditly.css" type="text/css" media="all" />
+
+    <script>
+        $(function () {
+            var creditly = Creditly.initialize(
+                '.creditly-wrapper .expiration-month-and-year',
+                '.creditly-wrapper .credit-card-number',
+                '.creditly-wrapper .security-code',
+                '.creditly-wrapper .card-type');
+
+            $(".creditly-card-form .submit").click(function (e) {
+                e.preventDefault();
+                var output = creditly.validate();
+                if (output) {
+                    // Your validated credit card output
+                    console.log(output);
+                }
+            });
+        });
+    </script>
+    <!-- //credit-card -->
     <!-- start-smooth-scrolling -->
     <script src="{{ asset('template') }}/js/move-top.js"></script>
     <script src="{{ asset('template') }}/js/easing.js"></script>

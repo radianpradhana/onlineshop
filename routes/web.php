@@ -69,3 +69,15 @@ Route::get('/contact', function () {
     return view('page.contact');
 });
 
+Route::get('/checkout', function () {
+    return view('page.checkout');
+});
+
+Route::get('/faq', function () {
+    return view('page.faq');
+});
+
+Route::get('/payment', function () {
+    return view('page.payment');
+});
+
