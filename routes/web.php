@@ -33,3 +33,19 @@ Route::get('/womens', function () {
     return view('page.womens');
 });
 
+Route::get('/boy', function () {
+    return view('page.boy');
+});
+
+Route::get('/boys', function () {
+    return view('page.boys');
+});
+
+Route::get('/girl', function () {
+    return view('page.girl');
+});
+
+Route::get('/girls', function () {
+    return view('page.girls');
+});
+

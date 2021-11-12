@@ -80,49 +80,49 @@
                         <div class="row w3_kids  py-3">
                             <div class="col-md-3 ">
                                 <span class="bg-light">Boy's Clothing</span>
-                                <a class="dropdown-item" href="{{ asset('template') }}/boys.html">T-Shirts</a>
-                                <a class="dropdown-item" href="{{ asset('template') }}/boys.html">Coats</a>
-                                <a class="dropdown-item" href="{{ asset('template') }}/boys.html">Shirts</a>
-                                <a class="dropdown-item" href="{{ asset('template') }}/boys.html">Suits & Blazers</a>
-                                <a class="dropdown-item" href="{{ asset('template') }}/boys.html">Jackets</a>
-                                <a class="dropdown-item" href="{{ asset('template') }}/boys.html">Trousers</a>
+                                <a class="dropdown-item" href="/boy">T-Shirts</a>
+                                <a class="dropdown-item" href="/boy">Coats</a>
+                                <a class="dropdown-item" href="/boy">Shirts</a>
+                                <a class="dropdown-item" href="/boy">Suits & Blazers</a>
+                                <a class="dropdown-item" href="/boy">Jackets</a>
+                                <a class="dropdown-item" href="/boy">Trousers</a>
                             </div>
                             <div class="col-md-3">
-                                <a class="dropdown-item mt-4" href="{{ asset('template') }}/boys.html">T-Shirts</a>
-                                <a class="dropdown-item" href="{{ asset('template') }}/boys.html">Coats</a>
-                                <a class="dropdown-item" href="{{ asset('template') }}/boys.html">Shirts</a>
-                                <a class="dropdown-item" href="{{ asset('template') }}/boys.html">Suits & Blazers</a>
-                                <a class="dropdown-item" href="{{ asset('template') }}/boys.html">Jackets</a>
-                                <a class="dropdown-item" href="{{ asset('template') }}/boys.html">Trousers</a>
+                                <a class="dropdown-item mt-4" href="/boy">T-Shirts</a>
+                                <a class="dropdown-item" href="/boy">Coats</a>
+                                <a class="dropdown-item" href="/boy">Shirts</a>
+                                <a class="dropdown-item" href="/boy">Suits & Blazers</a>
+                                <a class="dropdown-item" href="/boy">Jackets</a>
+                                <a class="dropdown-item" href="/boy">Trousers</a>
                             </div>
                             <div class="col-md-3">
                                 <span>Girl's Clothing</span>
-                                <a class="dropdown-item" href="{{ asset('template') }}/girls.html">T-shirts</a>
-                                <a class="dropdown-item" href="{{ asset('template') }}/girls.html">Dresses</a>
-                                <a class="dropdown-item" href="{{ asset('template') }}/girls.html">Tunics</a>
-                                <a class="dropdown-item" href="{{ asset('template') }}/girls.html">Skirts</a>
-                                <a class="dropdown-item" href="{{ asset('template') }}/girls.html">Jeans</a>
-                                <a class="dropdown-item" href="{{ asset('template') }}/girls.html">Midi</a>
+                                <a class="dropdown-item" href="/girl">T-shirts</a>
+                                <a class="dropdown-item" href="/girl">Dresses</a>
+                                <a class="dropdown-item" href="/girl">Tunics</a>
+                                <a class="dropdown-item" href="/girl">Skirts</a>
+                                <a class="dropdown-item" href="/girl">Jeans</a>
+                                <a class="dropdown-item" href="/girl">Midi</a>
                             </div>
                             <div class="col-md-3">
-                                <a class="dropdown-item  mt-4" href="{{ asset('template') }}/girls.html">Tunics</a>
-                                <a class="dropdown-item" href="{{ asset('template') }}/girls.html">Skirts</a>
-                                <a class="dropdown-item" href="{{ asset('template') }}/girls.html">T-shirts</a>
-                                <a class="dropdown-item" href="{{ asset('template') }}/girls.html">Dresses</a>
-                                <a class="dropdown-item" href="{{ asset('template') }}/girls.html">Jeans</a>
+                                <a class="dropdown-item  mt-4" href="/girl">Tunics</a>
+                                <a class="dropdown-item" href="/girl">Skirts</a>
+                                <a class="dropdown-item" href="/girl">T-shirts</a>
+                                <a class="dropdown-item" href="/girl">Dresses</a>
+                                <a class="dropdown-item" href="/girl">Jeans</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ asset('template') }}/about.html">About</a>
+                <a class="nav-link" href="/about">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ asset('template') }}/blog.html">Blog</a>
+                <a class="nav-link" href="/blog">Blog</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ asset('template') }}/contact.html">Contact</a>
+                <a class="nav-link" href="/contact">Contact</a>
             </li>
         </ul>
     </div>

@@ -29,6 +29,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <link href="{{ asset('template') }}/css/flexslider.css" type="text/css" rel="stylesheet" media="all">
     <!-- Owl-Carousel-CSS -->
     <link rel="stylesheet" href="{{ asset('template') }}/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="{{ asset('template') }}/css/owl.theme.default.min.css">
     <!-- Range-slider-css -->
     <link rel="stylesheet" type="text/css" href="{{ asset('template') }}/css/jquery-ui1.css">
     <link href="{{ asset('template') }}/css/style.css" type="text/css" rel="stylesheet" media="all">
