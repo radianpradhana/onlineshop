@@ -49,3 +49,23 @@ Route::get('/girls', function () {
     return view('page.girls');
 });
 
+Route::get('/about', function () {
+    return view('page.about');
+});
+
+Route::get('/single', function () {
+    return view('page.single');
+});
+
+Route::get('/shop', function () {
+    return view('page.shop');
+});
+
+Route::get('/blog', function () {
+    return view('page.blog');
+});
+
+Route::get('/contact', function () {
+    return view('page.contact');
+});
+

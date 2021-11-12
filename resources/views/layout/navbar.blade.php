@@ -124,6 +124,20 @@
             <li class="nav-item">
                 <a class="nav-link" href="/contact">Contact</a>
             </li>
+            <li class="nav-item dropdown has-mega-menu" style="position:static;">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Extra Page</a>
+                <div class="dropdown-menu" style="width:100%">
+                    <div class="px-0 container">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <a class="dropdown-item" href="/checkout">Checkout</a>
+                                <a class="dropdown-item" href="/faq">FAQ</a>
+                                <a class="dropdown-item" href="/payment">Payment</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
         </ul>
     </div>
 </nav>
