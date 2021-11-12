@@ -16,3 +16,20 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('main');
 });
+
+Route::get('/men', function () {
+    return view('page.men');
+});
+
+Route::get('/mens', function () {
+    return view('page.mens');
+});
+
+Route::get('/women', function () {
+    return view('page.women');
+});
+
+Route::get('/womens', function () {
+    return view('page.womens');
+});
+

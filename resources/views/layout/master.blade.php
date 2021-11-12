@@ -8,7 +8,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html lang="zxx">
 
 <head>
-    <title>Fashion Hub Ecommerce Category Bootstrap Responsive Website Template| @yield('title')</title>
+    <title>Fashion Hub | @yield('title')</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8" />
     <meta name="keywords" content="Fashion Hub Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -26,8 +26,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <link href="{{ asset('template') }}/css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
     <!-- shop css -->
     <link href="{{ asset('template') }}/css/shop.css" type="text/css" rel="stylesheet" media="all">
-    <link rel="stylesheet" href="{{ asset('template') }}/css/owl.carousel.min.css">
+    <link href="{{ asset('template') }}/css/flexslider.css" type="text/css" rel="stylesheet" media="all">
     <!-- Owl-Carousel-CSS -->
+    <link rel="stylesheet" href="{{ asset('template') }}/css/owl.carousel.min.css">
+    <!-- Range-slider-css -->
+    <link rel="stylesheet" type="text/css" href="{{ asset('template') }}/css/jquery-ui1.css">
     <link href="{{ asset('template') }}/css/style.css" type="text/css" rel="stylesheet" media="all">
     <!-- font-awesome icons -->
     <link href="{{ asset('template') }}/css/fontawesome-all.min.css" rel="stylesheet">
@@ -144,6 +147,18 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         });
     </script>
     <!-- //Product slider Owl-Carousel-JavaScript -->
+    <!-- FlexSlider -->
+    <script src="{{ asset('template') }}/js/jquery.flexslider.js"></script>
+    <script>
+        // Can also be used with $(document).ready()
+        $(window).load(function () {
+            $('.flexslider1').flexslider({
+                animation: "slide",
+                controlNav: "thumbnails"
+            });
+        });
+    </script>
+    <!-- //FlexSlider-->
     <!-- cart-js -->
     <script src="{{ asset('template') }}/js/minicart.js">
     </script>
@@ -161,6 +176,27 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         });
     </script>
     <!-- //cart-js -->
+    <!-- zoom -->
+    <script src="{{ asset('template') }}/js/imagezoom.js"></script>
+    <!-- zoom-->
+    <!-- price range (top products) -->
+    <script src="{{ asset('template') }}/js/jquery-ui.js"></script>
+    <script>
+        //<![CDATA[ 
+        $(window).load(function () {
+            $("#slider-range").slider({
+                range: true,
+                min: 0,
+                max: 9000,
+                values: [50, 6000],
+                slide: function (event, ui) {
+                    $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+                }
+            });
+            $("#amount").val("$" + $("#slider-range").slider("values", 0) + " - $" + $("#slider-range").slider("values", 1));
+
+        }); //]]>
+    </script>
     <!-- start-smooth-scrolling -->
     <script src="{{ asset('template') }}/js/move-top.js"></script>
     <script src="{{ asset('template') }}/js/easing.js"></script>

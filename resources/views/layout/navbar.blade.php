@@ -6,7 +6,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mx-auto text-center">
             <li class="nav-item">
-                <a class="nav-link  active" href="{{ asset('template') }}/index.html">Home
+                <a class="nav-link  active" href="/">Home
                     <span class="sr-only">(current)</span>
                 </a>
             </li>
@@ -16,28 +16,28 @@
                     <div class="px-0 container">
                         <div class="row">
                             <div class="col-md-4">
-                                <a class="dropdown-item" href="{{ asset('template') }}/men.html">T-Shirts</a>
-                                <a class="dropdown-item" href="{{ asset('template') }}/men.html">Coats</a>
-                                <a class="dropdown-item" href="{{ asset('template') }}/men.html">Shirts</a>
-                                <a class="dropdown-item" href="{{ asset('template') }}/men.html">Suits & Blazers</a>
-                                <a class="dropdown-item" href="{{ asset('template') }}/men.html">Jackets</a>
-                                <a class="dropdown-item" href="{{ asset('template') }}/men.html">Trousers</a>
+                                <a class="dropdown-item" href="/men">T-Shirts</a>
+                                <a class="dropdown-item" href="/men">Coats</a>
+                                <a class="dropdown-item" href="/men">Shirts</a>
+                                <a class="dropdown-item" href="/men">Suits & Blazers</a>
+                                <a class="dropdown-item" href="/men">Jackets</a>
+                                <a class="dropdown-item" href="/men">Trousers</a>
                             </div>
                             <div class="col-md-4">
-                                <a class="dropdown-item" href="{{ asset('template') }}/men.html">T-Shirts</a>
-                                <a class="dropdown-item" href="{{ asset('template') }}/men.html">Trousers</a>
-                                <a class="dropdown-item" href="{{ asset('template') }}/men.html">Shirts</a>
-                                <a class="dropdown-item" href="{{ asset('template') }}/men.html">Suits & Blazers</a>
-                                <a class="dropdown-item" href="{{ asset('template') }}/men.html">Coats & Jackets</a>
-                                <a class="dropdown-item" href="{{ asset('template') }}/men.html">Jackets</a>
+                                <a class="dropdown-item" href="/men">T-Shirts</a>
+                                <a class="dropdown-item" href="/men">Trousers</a>
+                                <a class="dropdown-item" href="/men">Shirts</a>
+                                <a class="dropdown-item" href="/men">Suits & Blazers</a>
+                                <a class="dropdown-item" href="/men">Coats & Jackets</a>
+                                <a class="dropdown-item" href="/men">Jackets</a>
                             </div>
                             <div class="col-md-4">
-                                <a class="dropdown-item" href="{{ asset('template') }}/men.html">T-Shirts</a>
-                                <a class="dropdown-item" href="{{ asset('template') }}/men.html">Coats</a>
-                                <a class="dropdown-item" href="{{ asset('template') }}/men.html">Shirts</a>
-                                <a class="dropdown-item" href="{{ asset('template') }}/men.html">Suits & Blazers</a>
-                                <a class="dropdown-item" href="{{ asset('template') }}/men.html">Jackets</a>
-                                <a class="dropdown-item" href="{{ asset('template') }}/men.html">Trousers</a>
+                                <a class="dropdown-item" href="/men">T-Shirts</a>
+                                <a class="dropdown-item" href="/men">Coats</a>
+                                <a class="dropdown-item" href="/men">Shirts</a>
+                                <a class="dropdown-item" href="/men">Suits & Blazers</a>
+                                <a class="dropdown-item" href="/men">Jackets</a>
+                                <a class="dropdown-item" href="/men">Trousers</a>
                             </div>
                         </div>
                     </div>
@@ -49,25 +49,25 @@
                     <div class="px-0 container">
                         <div class="row">
                             <div class="col-md-4">
-                                <a class="dropdown-item" href="{{ asset('template') }}/women.html">Dresses</a>
-                                <a class="dropdown-item" href="{{ asset('template') }}/women.html">T-shirts</a>
-                                <a class="dropdown-item" href="{{ asset('template') }}/women.html">Skirts</a>
-                                <a class="dropdown-item" href="{{ asset('template') }}/women.html">Jeans</a>
-                                <a class="dropdown-item" href="{{ asset('template') }}/women.html">Tunics</a>
+                                <a class="dropdown-item" href="/women">Dresses</a>
+                                <a class="dropdown-item" href="/women">T-shirts</a>
+                                <a class="dropdown-item" href="/women">Skirts</a>
+                                <a class="dropdown-item" href="/women">Jeans</a>
+                                <a class="dropdown-item" href="/women">Tunics</a>
                             </div>
                             <div class="col-md-4">
-                                <a class="dropdown-item" href="{{ asset('template') }}/women.html">T-shirts</a>
-                                <a class="dropdown-item" href="{{ asset('template') }}/women.html">Dresses</a>
-                                <a class="dropdown-item" href="{{ asset('template') }}/women.html">Tunics</a>
-                                <a class="dropdown-item" href="{{ asset('template') }}/women.html">Skirts</a>
-                                <a class="dropdown-item" href="{{ asset('template') }}/women.html">Jeans</a>
+                                <a class="dropdown-item" href="/women">T-shirts</a>
+                                <a class="dropdown-item" href="/women">Dresses</a>
+                                <a class="dropdown-item" href="/women">Tunics</a>
+                                <a class="dropdown-item" href="/women">Skirts</a>
+                                <a class="dropdown-item" href="/women">Jeans</a>
                             </div>
                             <div class="col-md-4">
-                                <a class="dropdown-item" href="{{ asset('template') }}/women.html">Dresses</a>
-                                <a class="dropdown-item" href="{{ asset('template') }}/women.html">T-shirts</a>
-                                <a class="dropdown-item" href="{{ asset('template') }}/women.html">Skirts</a>
-                                <a class="dropdown-item" href="{{ asset('template') }}/women.html">Jeans</a>
-                                <a class="dropdown-item" href="{{ asset('template') }}/women.html">Tunics</a>
+                                <a class="dropdown-item" href="/women">Dresses</a>
+                                <a class="dropdown-item" href="/women">T-shirts</a>
+                                <a class="dropdown-item" href="/women">Skirts</a>
+                                <a class="dropdown-item" href="/women">Jeans</a>
+                                <a class="dropdown-item" href="/women">Tunics</a>
                             </div>
                         </div>
                     </div>
